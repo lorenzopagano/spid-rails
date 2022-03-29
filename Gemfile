@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 # Declare your gem's dependencies in spid-rails.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
+  
+gem 'spid', git: 'https://github.com/lorenzopagano/spid-ruby.git'
+
 # development dependencies will be added by default to the :development group.
 gemspec
 

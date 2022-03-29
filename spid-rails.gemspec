@@ -14,16 +14,16 @@ Gem::Specification.new do |s|
   s.description = 'Soluzione per poter effettuare il login tramite SPID'
   s.license     = 'MIT'
 
-  s.required_ruby_version = '>= 2.4.0'
+  s.required_ruby_version = '>= 3.1'
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
-  s.add_runtime_dependency 'rails', '~> 5.1', '>= 5.1.4'
-  s.add_runtime_dependency 'ruby-saml', '~> 1.8.0'
+  s.add_runtime_dependency 'rails' #, '~> 7.0.2', '>= 7.0.2.3'
+  s.add_runtime_dependency 'ruby-saml', '~> 1.11.0'
 
   # Resolve CVE-2018-3741  vulnerability
   s.add_runtime_dependency 'rails-html-sanitizer', '~> 1.0', '>= 1.0.4'
-  s.add_runtime_dependency 'spid', '>= 0.18.0'
+  #s.add_runtime_dependency 'spid', '>= 0.18.0', git: 'https://github.com/lorenzopagano/spid-ruby.git'
 
   s.add_development_dependency 'bundler-audit'
   s.add_development_dependency 'pry-byebug'
